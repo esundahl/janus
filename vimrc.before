@@ -1,0 +1,2 @@
+" Set the mapleader key
+let mapleader = ","

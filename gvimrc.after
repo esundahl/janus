@@ -1,0 +1,14 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Author:   Erik Sundahl
+" Appnet:  @esundahl
+" Website:  http://eriksundahl.com
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"Set Color Scheme
+set background=dark
+colorscheme bubblegum
+set guifont=Monaco:h12
