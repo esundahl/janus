@@ -11,4 +11,4 @@
 "Set Color Scheme
 set background=dark
 colorscheme bubblegum
-set guifont=Monaco:h12
+set guifont=Monaco:h14
