@@ -39,7 +39,7 @@ nmap <leader>q :q<cr>
 nmap <leader><leader>q :wq<cr>
 
 " Strip Whitespace on Save
-autocmd BufWritePre *.js,*.json :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Mappings for Vimdiff
 map <leader>1 :diffget LOCAL<CR>
