@@ -73,3 +73,6 @@ if executable('coffeetags')
         \ }
         \ }
 endif
+
+" Special extension settings
+au BufRead,BufNewFile *.tss set filetype=javascript " Titanium Alloy Style Files
