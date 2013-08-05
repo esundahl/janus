@@ -54,8 +54,7 @@ if exists(":Tabularize")
 endif
 
 " Copy default register to the system clipboard
-vmap <C-x> :!pbcopy<CR>
-vmap <C-c> :w !pbcopy<CR><CR>
+set clipboard=unnamed
 
 " Ctags support for CoffeeScript
 if executable('coffeetags')
