@@ -6,7 +6,7 @@
 syntax on
 let g:solarized_termcolors=16
 set background=dark
-colorscheme bubblegum
+colorscheme solarized
 
 "Map escape key to jj -- much faster
 imap ii <esc>
