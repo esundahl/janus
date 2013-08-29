@@ -14,6 +14,9 @@ imap ii <esc>
 "Saves time; maps the spacebar to colon
 nmap <space> :
 
+"Use return to insert newlines
+nnoremap <CR> o<Esc>
+
 " Use the arrows to something usefull
 map <right> :bn<cr>
 map <left> :bp<cr>
