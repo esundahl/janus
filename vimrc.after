@@ -1,12 +1,16 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Author:   Erik Sundahl
-" Appnet:  @esundahl
+" Twitter:  @esundahl
+" Appnet:   @esundahl
 " Website:  http://eriksundahl.com
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
+
+" Fixes gitgutter color
+highlight SignColumn ctermbg=Black
 
 "Map escape key to jj -- much faster
 imap ii <esc>
