@@ -12,9 +12,6 @@ colorscheme solarized
 " Fixes gitgutter color
 highlight SignColumn ctermbg=Black
 
-"Map escape key to jj -- much faster
-imap ii <esc>
-
 "Saves time; maps the spacebar to colon
 nmap <space> :
 
