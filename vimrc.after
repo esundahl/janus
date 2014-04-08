@@ -1,13 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Author:   Erik Sundahl
 " Twitter:  @esundahl
-" Appnet:   @esundahl
 " Website:  http://eriksundahl.com
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
-let g:solarized_termcolors=16
 set background=dark
-colorscheme solarized
+colorscheme pastel
+AirlineTheme bubblegum
 
 " Fixes gitgutter color
 highlight SignColumn ctermbg=Black

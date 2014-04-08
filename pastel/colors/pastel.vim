@@ -1,8 +1,8 @@
 " Vim Color File
-" Name:       bubblegum.vim
+" Name:       pastel.vim
 " Version:    0.1
-" Maintainer: baskerville <nihilhill *at* gmail *dot* com>
-"
+" Maintainer: Erik Sundahl
+" "
 " Based on xoria256.
 
 set background=dark
@@ -12,7 +12,7 @@ if exists("syntax on")
     syntax reset
 endif
 
-let g:colors_name="bubblegum"
+let g:colors_name="pastel"
 
 hi Normal          ctermfg=magenta    ctermbg=235    cterm=none    guifg=#d7afd7    guibg=#262626    gui=none
 hi Comment         ctermfg=white    guifg=#767676
@@ -50,7 +50,6 @@ hi StorageClass    ctermfg=green    guifg=#87d787
 " purple
 hi Structure       ctermfg=cyan    guifg=#AFAFD7
 hi Typedef         ctermfg=cyan    guifg=#AFAFD7
-hi Parameter         ctermfg=cyan    guifg=#AFAFD7
 
 " red
 hi Special         ctermfg=red    guifg=#D78787
@@ -110,10 +109,10 @@ hi vimFold         ctermfg=243    guifg=#767676
 hi vimCommentTitle ctermfg=fg    guifg=fg
 hi helpHyperTextJump ctermfg=74    guifg=#5FAFD7
 
-hi htmlTag         ctermfg=147    guifg=#AFAFFF
-hi htmlEndTag      ctermfg=147    guifg=#AFAFFF
-hi htmlTagName     ctermfg=175    guifg=#D787AF
-hi htmlString      ctermfg=144    guifg=#AFAF87
+hi htmlTag         ctermfg=magenta    guifg=#AFAFFF
+hi htmlEndTag      ctermfg=magenta    guifg=#AFAFFF
+hi htmlTagName     ctermfg=blue    guifg=#D787AF
+hi htmlString      ctermfg=yellow    guifg=#AFAF87
 
 hi diffFile        ctermfg=243    guifg=#767676
 hi diffLine        ctermfg=243    guifg=#767676
@@ -135,6 +134,16 @@ hi SpellLocal      ctermfg=180    ctermbg=bg      cterm=underline    guifg=#D7AF
 hi mkdCode         ctermfg=243    guifg=#767676
 hi mkdURL          ctermfg=111    guifg=#87AFFF
 hi mkdLink         ctermfg=181    guifg=#D7AFAF
+
+" Javascript Specific Styling
+hi jsFuncArgs       ctermfg=cyan
+hi jsPrototype      ctermfg=red
+hi jsKeyword        ctermfg=red
+hi jsThis           ctermfg=cyan
+hi jsReturn         ctermfg=green
+
+
+
 
 hi def link mailSubject Title
 hi def link mailQuoted2 mailQuoted1
