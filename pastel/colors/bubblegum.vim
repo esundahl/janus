@@ -14,54 +14,51 @@ endif
 
 let g:colors_name="bubblegum"
 
-"
-" preferred groups
-" (see `:h w18`)
-"
-hi Normal          ctermfg=248    ctermbg=235    cterm=none    guifg=#A8A8A8    guibg=#262626    gui=none
-hi Comment         ctermfg=243    guifg=#767676
+hi Normal          ctermfg=magenta    ctermbg=235    cterm=none    guifg=#d7afd7    guibg=#262626    gui=none
+hi Comment         ctermfg=white    guifg=#767676
 
 " yellow
-hi Constant        ctermfg=180    guifg=#D7AF87
-hi String          ctermfg=180    guifg=#D7AF87
-hi Character       ctermfg=142    guifg=#AFAF00
-hi Number          ctermfg=179    guifg=#D7AF5F
-hi Boolean         ctermfg=144    guifg=#AFAF87
-hi Float           ctermfg=179    guifg=#D7AF5F
+hi Constant        ctermfg=yellow    guifg=#D7AF87
+hi String          ctermfg=yellow    guifg=#D7AF87
+hi Character       ctermfg=yellow    guifg=#AFAF00
+hi Number          ctermfg=yellow    guifg=#D7AF5F
+hi Boolean         ctermfg=yellow    guifg=#AFAF87
+hi Float           ctermfg=yellow    guifg=#D7AF5F
 
 " pink
-hi Identifier      ctermfg=182    guifg=#D7AFD7
-hi Function        ctermfg=182    guifg=#D7AFD7
+hi Identifier      ctermfg=magenta    guifg=#D7AFD7
 
 " blue
-hi Statement       ctermfg=110    guifg=#87AFD7
-hi Conditional     ctermfg=110    guifg=#87AFD7
-hi Repeat          ctermfg=110    guifg=#87AFD7
-hi Label           ctermfg=110    guifg=#87AFD7
-hi Operator        ctermfg=110    guifg=#87AFD7
-hi Keyword         ctermfg=110    guifg=#87AFD7
-hi Exception       ctermfg=110    guifg=#87AFD7
+hi Statement       ctermfg=blue    guifg=#87AFD7
+hi Conditional     ctermfg=blue    guifg=#87AFD7
+hi Repeat          ctermfg=blue    guifg=#87AFD7
+hi Label           ctermfg=blue    guifg=#87AFD7
+hi Keyword         ctermfg=blue    guifg=#87AFD7
+hi Exception       ctermfg=blue    guifg=#87AFD7
+hi Function        ctermfg=blue    guifg=#87afd7
 
 " green
-hi PreProc         ctermfg=114    guifg=#87D787
-hi Include         ctermfg=114    guifg=#87D787
-hi Define          ctermfg=114    guifg=#87D787
-hi Macro           ctermfg=114    guifg=#87D787
-hi PreCondit       ctermfg=114    guifg=#87D787
+hi PreProc         ctermfg=green    guifg=#87D787
+hi Include         ctermfg=green    guifg=#87D787
+hi Define          ctermfg=green    guifg=#87D787
+hi Macro           ctermfg=green    guifg=#87D787
+hi PreCondit       ctermfg=green    guifg=#87D787
+hi Operator        ctermfg=green    guifg=#87D787
+hi Type            ctermfg=green    guifg=#87d787
+hi StorageClass    ctermfg=green    guifg=#87d787
 
 " purple
-hi Type            ctermfg=146    guifg=#AFAFD7
-hi StorageClass    ctermfg=146    guifg=#AFAFD7
-hi Structure       ctermfg=146    guifg=#AFAFD7
-hi Typedef         ctermfg=146    guifg=#AFAFD7
+hi Structure       ctermfg=cyan    guifg=#AFAFD7
+hi Typedef         ctermfg=cyan    guifg=#AFAFD7
+hi Parameter         ctermfg=cyan    guifg=#AFAFD7
 
 " red
-hi Special         ctermfg=174    guifg=#D78787
-hi SpecialChar     ctermfg=174    guifg=#D78787
-hi Tag             ctermfg=174    guifg=#D78787
-hi Delimiter       ctermfg=174    guifg=#D78787
-hi SpecialComment  ctermfg=174    guifg=#D78787
-hi Debug           ctermfg=174    guifg=#D78787
+hi Special         ctermfg=red    guifg=#D78787
+hi SpecialChar     ctermfg=red    guifg=#D78787
+hi Tag             ctermfg=red    guifg=#D78787
+hi Delimiter       ctermfg=red    guifg=#D78787
+hi SpecialComment  ctermfg=red    guifg=#D78787
+hi Debug           ctermfg=red    guifg=#D78787
 
 hi Underlined      ctermfg=fg    guifg=fg
 hi Ignore          ctermfg=bg    guifg=bg
