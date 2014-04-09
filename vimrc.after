@@ -9,7 +9,6 @@ colorscheme pastel
 AirlineTheme bubblegum
 
 " Fixes gitgutter color
-highlight SignColumn ctermbg=Black
 
 "Saves time; maps the spacebar to colon
 nmap <space> :

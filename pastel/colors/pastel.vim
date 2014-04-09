@@ -2,148 +2,222 @@
 " Name:       pastel.vim
 " Version:    0.1
 " Maintainer: Erik Sundahl
-" "
-" Based on xoria256.
+
 
 set background=dark
 hi clear
 
 if exists("syntax on")
-    syntax reset
+  syntax reset
 endif
 
 let g:colors_name="pastel"
 
-hi Normal          ctermfg=magenta    ctermbg=235    cterm=none    guifg=#d7afd7    guibg=#262626    gui=none
+hi Normal          ctermfg=magenta    ctermbg=black    cterm=none    guifg=#d7afd7    guibg=#262626    gui=none
 hi Comment         ctermfg=white    guifg=#767676
 
 " yellow
-hi Constant        ctermfg=yellow    guifg=#D7AF87
-hi String          ctermfg=yellow    guifg=#D7AF87
-hi Character       ctermfg=yellow    guifg=#AFAF00
-hi Number          ctermfg=yellow    guifg=#D7AF5F
-hi Boolean         ctermfg=yellow    guifg=#AFAF87
-hi Float           ctermfg=yellow    guifg=#D7AF5F
+hi Constant        ctermfg=yellow
+hi String          ctermfg=yellow
+hi Character       ctermfg=yellow
+hi Number          ctermfg=yellow
+hi Boolean         ctermfg=yellow
+hi Float           ctermfg=yellow
 
 " pink
 hi Identifier      ctermfg=magenta    guifg=#D7AFD7
 
-" blue
-hi Statement       ctermfg=blue    guifg=#87AFD7
-hi Conditional     ctermfg=blue    guifg=#87AFD7
-hi Repeat          ctermfg=blue    guifg=#87AFD7
-hi Label           ctermfg=blue    guifg=#87AFD7
-hi Keyword         ctermfg=blue    guifg=#87AFD7
-hi Exception       ctermfg=blue    guifg=#87AFD7
-hi Function        ctermfg=blue    guifg=#87afd7
+hi Conditional     ctermfg=blue 
+hi Repeat          ctermfg=blue 
+hi Label           ctermfg=blue 
+hi Keyword         ctermfg=blue 
+hi Exception       ctermfg=blue 
+hi Noise           ctermfg=blue
 
 " green
-hi PreProc         ctermfg=green    guifg=#87D787
-hi Include         ctermfg=green    guifg=#87D787
-hi Define          ctermfg=green    guifg=#87D787
-hi Macro           ctermfg=green    guifg=#87D787
-hi PreCondit       ctermfg=green    guifg=#87D787
-hi Operator        ctermfg=green    guifg=#87D787
-hi Type            ctermfg=green    guifg=#87d787
-hi StorageClass    ctermfg=green    guifg=#87d787
+hi PreProc         ctermfg=green
+hi Include         ctermfg=green
+hi Define          ctermfg=green
+hi Macro           ctermfg=green
+hi PreCondit       ctermfg=green
+hi Operator        ctermfg=green
+hi Type            ctermfg=green
+hi StorageClass    ctermfg=green
+hi Statement       ctermfg=green
+hi Function        ctermfg=green
 
 " purple
-hi Structure       ctermfg=cyan    guifg=#AFAFD7
-hi Typedef         ctermfg=cyan    guifg=#AFAFD7
+hi Structure       ctermfg=cyan 
+hi Typedef         ctermfg=cyan 
 
 " red
-hi Special         ctermfg=red    guifg=#D78787
-hi SpecialChar     ctermfg=red    guifg=#D78787
-hi Tag             ctermfg=red    guifg=#D78787
-hi Delimiter       ctermfg=red    guifg=#D78787
-hi SpecialComment  ctermfg=red    guifg=#D78787
-hi Debug           ctermfg=red    guifg=#D78787
+hi Special         ctermfg=red
+hi SpecialChar     ctermfg=red  
+hi Tag             ctermfg=red  
+hi Delimiter       ctermfg=red  
+hi SpecialComment  ctermfg=red  
+hi Debug           ctermfg=red  
+hi Error           ctermfg=red
 
 hi Underlined      ctermfg=fg    guifg=fg
 hi Ignore          ctermfg=bg    guifg=bg
-hi Error           ctermfg=231    ctermbg=167    guifg=#FFFFFF    guibg=#D75F5F
-hi Todo            ctermfg=187    ctermbg=bg     cterm=none    guifg=#D7D7AF    guibg=bg    gui=none
+hi Error           ctermfg=231    ctermbg=167 
+hi Todo            ctermfg=187    ctermbg=bg     cterm=none 
 
 "
 " minor groups
 "
-hi StatusLine      ctermfg=fg     ctermbg=236    cterm=none    guifg=fg    guibg=#303030    gui=none
-hi StatusLineNC    ctermfg=243    ctermbg=236    cterm=none    guifg=#767676    guibg=#303030    gui=none
-hi TabLine         ctermfg=fg     ctermbg=236    cterm=none    guifg=fg    guibg=#303030    gui=none
-hi TabLineSel      ctermfg=fg     ctermbg=bg     cterm=none    guifg=fg    guibg=bg    gui=none
-hi TabLineFill     ctermfg=fg     ctermbg=236    cterm=none    guifg=fg    guibg=#303030    gui=none
+hi StatusLine      ctermfg=fg     ctermbg=236    cterm=none
+hi StatusLineNC    ctermfg=243    ctermbg=236    cterm=none
+hi TabLine         ctermfg=fg     ctermbg=236    cterm=none
+hi TabLineSel      ctermfg=fg     ctermbg=bg     cterm=none
+hi TabLineFill     ctermfg=fg     ctermbg=236    cterm=none
 
-hi Pmenu           ctermfg=fg     ctermbg=236    guifg=fg    guibg=#303030
-hi PmenuSel        ctermfg=231    ctermbg=243    guifg=#FFFFFF    guibg=#767676
-hi PmenuSbar       ctermfg=231    ctermbg=243    guifg=#FFFFFF    guibg=#767676
-hi WildMenu        ctermfg=71     ctermbg=236    cterm=none    guifg=#5FAF5F    guibg=#303030    gui=none
+hi Pmenu           ctermfg=fg     ctermbg=236
+hi PmenuSel        ctermfg=231    ctermbg=243
+hi PmenuSbar       ctermfg=231    ctermbg=243
+hi WildMenu        ctermfg=71     ctermbg=236    cterm=none
 
-hi Visual          ctermfg=fg     ctermbg=bg     cterm=reverse    guifg=fg    guibg=bg    gui=reverse
-hi VertSplit       ctermfg=243    ctermbg=236    cterm=none    guifg=#767676    guibg=#303030    gui=none
-hi LineNr          ctermfg=243    ctermbg=236    guifg=#767676    guibg=#303030
+hi Visual          ctermfg=fg     ctermbg=bg     cterm=reverse
+hi VertSplit       ctermfg=243    ctermbg=236    cterm=none   
+hi LineNr          ctermfg=243
 
-hi Title           ctermfg=109    guifg=#87AFAF
-hi SpecialKey      ctermfg=114    guifg=#87D787
-hi NonText         ctermfg=243    guifg=#767676
-hi MatchParen      ctermfg=16     ctermbg=72    guifg=#000000    guibg=#5FAF87
-hi Directory       ctermfg=103    guifg=#8787AF
+hi Title           ctermfg=109   
+hi SpecialKey      ctermfg=114   
+hi NonText         ctermfg=243   
+hi MatchParen      ctermfg=16     ctermbg=72 
+hi Directory       ctermfg=103 
 
-hi ErrorMsg        ctermfg=210    ctermbg=bg    guifg=#FF8787    guibg=bg
-hi WarningMsg      ctermfg=140    guifg=#AF87D7
-hi MoreMsg         ctermfg=72    guifg=#5FAF87
-hi ModeMsg         ctermfg=222    guifg=#FFD787
+hi ErrorMsg        ctermfg=210    ctermbg=bg
+hi WarningMsg      ctermfg=140
+hi MoreMsg         ctermfg=72 
+hi ModeMsg         ctermfg=222
 
-hi Search          ctermfg=16     ctermbg=179     cterm=none    guifg=#000000    guibg=#D7AF5F    gui=none
-hi IncSearch       ctermfg=231    ctermbg=168     cterm=none    guifg=#FFFFFF    guibg=#D75F87    gui=none
-hi Question        ctermfg=38    guifg=#00AFD7
+hi Search          ctermfg=16     ctermbg=179     cterm=none
+hi IncSearch       ctermfg=231    ctermbg=168     cterm=none
+hi Question        ctermfg=38 
 
-hi Folded          ctermfg=243    ctermbg=bg    guifg=#767676    guibg=bg
-hi FoldColumn      ctermfg=79     ctermbg=236    guifg=#5FD7AF    guibg=#303030
-hi SignColumn      ctermfg=79     ctermbg=236    guifg=#5FD7AF    guibg=#303030
-hi ColorColumn     ctermfg=79     ctermbg=236    guifg=#5FD7AF    guibg=#303030
+hi Folded          ctermfg=243    ctermbg=bg 
+hi FoldColumn      ctermfg=79     ctermbg=black
+hi SignColumn      ctermfg=79     ctermbg=black
+hi ColorColumn     ctermfg=79     ctermbg=black
 
-hi CursorColumn    ctermbg=236    cterm=none    guibg=#303030    gui=none
-hi CursorLine      ctermbg=236    cterm=none    guibg=#303030    gui=none
+hi CursorColumn    ctermbg=236    cterm=none 
+hi CursorLine      ctermbg=236    cterm=none 
 
-hi vimFold         ctermfg=243    guifg=#767676
-hi vimCommentTitle ctermfg=fg    guifg=fg
-hi helpHyperTextJump ctermfg=74    guifg=#5FAFD7
+hi vimFold         ctermfg=243 
+hi vimCommentTitle ctermfg=fg  
+hi helpHyperTextJump ctermfg=74
 
-hi htmlTag         ctermfg=magenta    guifg=#AFAFFF
-hi htmlEndTag      ctermfg=magenta    guifg=#AFAFFF
-hi htmlTagName     ctermfg=blue    guifg=#D787AF
-hi htmlString      ctermfg=yellow    guifg=#AFAF87
+hi htmlTag         ctermfg=magenta
+hi htmlEndTag      ctermfg=magenta
+hi htmlTagName     ctermfg=blue   
+hi htmlString      ctermfg=yellow
 
-hi diffFile        ctermfg=243    guifg=#767676
-hi diffLine        ctermfg=243    guifg=#767676
-hi diffAdded       ctermfg=107    guifg=#87AF5F
-hi diffRemoved     ctermfg=175    guifg=#D787AF
-hi diffChanged     ctermfg=179    guifg=#D7AF5F
+hi diffFile        ctermfg=243    
+hi diffLine        ctermfg=243    
+hi diffAdded       ctermfg=107    
+hi diffRemoved     ctermfg=175    
+hi diffChanged     ctermfg=179
 
-hi diffAdd         ctermfg=16     ctermbg=149    guifg=#000000    guibg=#AFD75F
-hi diffDelete      ctermfg=231    ctermbg=fg    guifg=#FFFFFF    guibg=fg
-hi diffText        ctermfg=16     ctermbg=211    guifg=#000000    guibg=#FF87AF
-hi diffChange      ctermfg=16     ctermbg=217    guifg=#000000    guibg=#FFAFAF
-hi diffOldLine     ctermfg=104    guifg=#8787D7
+hi diffAdd         ctermfg=16     ctermbg=149 
+hi diffDelete      ctermfg=231    ctermbg=fg  
+hi diffText        ctermfg=16     ctermbg=211 
+hi diffChange      ctermfg=16     ctermbg=217 
+hi diffOldLine     ctermfg=104  
 
-hi SpellBad        ctermfg=210    ctermbg=bg      cterm=underline    guifg=#FF8787    guibg=bg    gui=underline
-hi SpellCap        ctermfg=174    ctermbg=bg      cterm=underline    guifg=#D78787    guibg=bg    gui=underline
-hi SpellRare       ctermfg=181    ctermbg=bg      cterm=underline    guifg=#D7AFAF    guibg=bg    gui=underline
-hi SpellLocal      ctermfg=180    ctermbg=bg      cterm=underline    guifg=#D7AF87    guibg=bg    gui=underline
+hi SpellBad        ctermfg=210    ctermbg=bg      cterm=underline 
+hi SpellCap        ctermfg=174    ctermbg=bg      cterm=underline 
+hi SpellRare       ctermfg=181    ctermbg=bg      cterm=underline 
+hi SpellLocal      ctermfg=180    ctermbg=bg      cterm=underline 
 
-hi mkdCode         ctermfg=243    guifg=#767676
-hi mkdURL          ctermfg=111    guifg=#87AFFF
-hi mkdLink         ctermfg=181    guifg=#D7AFAF
+hi mkdCode         ctermfg=243 
+hi mkdURL          ctermfg=111 
+hi mkdLink         ctermfg=181 
 
 " Javascript Specific Styling
 hi jsFuncArgs       ctermfg=cyan
-hi jsPrototype      ctermfg=red
-hi jsKeyword        ctermfg=red
+"hi jsKeyword        ctermfg=red
 hi jsThis           ctermfg=cyan
-hi jsReturn         ctermfg=green
+hi jsObjectKey         ctermfg=green
 
 
+"hi def link jsFuncArgRest          Special
+"hi def link jsComment              Comment
+"hi def link jsLineComment          Comment
+"hi def link jsEnvComment           PreProc
+"hi def link jsDocComment           Comment
+"hi def link jsCommentTodo          Todo
+"hi def link jsCvsTag               Function
+"hi def link jsDocTags              Special
+"hi def link jsDocSeeTag            Function
+"hi def link jsDocType              Type
+"hi def link jsDocTypeNoParam       Type
+"hi def link jsDocParam             Label
+"hi def link jsStringS              String
+"hi def link jsStringD              String
+"hi def link jsTemplateString       String
+"hi def link jsTernaryIfOperator    Conditional
+"hi def link jsRegexpString         String
+"hi def link jsRegexpBoundary       SpecialChar
+"hi def link jsRegexpQuantifier     SpecialChar
+"hi def link jsRegexpOr             Conditional
+"hi def link jsRegexpMod            SpecialChar
+"hi def link jsRegexpBackRef        SpecialChar
+"hi def link jsRegexpGroup          jsRegexpString
+"hi def link jsRegexpCharClass      Character
+"hi def link jsCharacter            Character
+"hi def link jsPrototype            Special
+"hi def link jsConditional          Conditional
+"hi def link jsBranch               Conditional
+"hi def link jsLabel                Label
+"hi def link jsReturn               Statement
+"hi def link jsRepeat               Repeat
+"hi def link jsStatement            Statement
+"hi def link jsException            Exception
+"hi def link jsKeyword              Keyword
+"hi def link jsArrowFunction        Type
+"hi def link jsFunction             Type
+"hi def link jsFuncName             Function
+"hi def link jsArgsObj              Special
+"hi def link jsError                Error
+"hi def link jsParensError          Error
+"hi def link jsParensErrA           Error
+"hi def link jsParensErrB           Error
+"hi def link jsParensErrC           Error
+"hi def link jsOperator             Operator
+"hi def link jsStorageClass         StorageClass
+"hi def link jsThis                 Special
+"hi def link jsNan                  Number
+"hi def link jsNull                 Type
+"hi def link jsUndefined            Type
+"hi def link jsNumber               Number
+"hi def link jsFloat                Float
+"hi def link jsBooleanTrue          Boolean
+"hi def link jsBooleanFalse         Boolean
+"hi def link jsNoise                Noise
+"hi def link jsBrackets             Noise
+"hi def link jsParens               Noise
+"hi def link jsBraces               Noise
+"hi def link jsFuncBraces           Noise
+"hi def link jsFuncParens           Noise
+"hi def link jsSpecial              Special
+"hi def link jsTemplateVar          Special
+"hi def link jsGlobalObjects        Special
+"hi def link jsExceptions           Special
+"hi def link jsFutureKeys           Special
+"hi def link jsBuiltins             Special
 
+"hi def link jsDomErrNo             Constant
+"hi def link jsDomNodeConsts        Constant
+"hi def link jsDomElemAttrs         Label
+"hi def link jsDomElemFuncs         PreProc
+
+"hi def link jsHtmlEvents           Special
+"hi def link jsHtmlElemAttrs        Label
+"hi def link jsHtmlElemFuncs        PreProc
+
+"hi def link jsCssStyles            Label
 
 hi def link mailSubject Title
 hi def link mailQuoted2 mailQuoted1
