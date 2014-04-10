@@ -9,12 +9,12 @@ colorscheme pastel
 AirlineTheme bubblegum
 
 " Fixes gitgutter color
+highlight SignColumn ctermbg=black
 
 "Saves time; maps the spacebar to colon
 nmap <space> :
 
 " Use the arrows to something usefull
-"
 map <right> :bn<cr>
 map <left> :bp<cr>
 
@@ -33,10 +33,13 @@ map <C-F> :call DWM_Focus()<CR>
 
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
-" Fast saving
+" Fast saving and exiting
 nmap <leader>w :w<cr>
+nmap <leader>W :SudoWrite<cr>
 nmap <leader>q :q<cr>
-nmap <leader><leader>q :wq<cr>
+nmap <leader>Q :q!<cr>
+nmap <leader>x :x<cr>
+nmap <leader>X :SudoWrite<cr>:q<cr>
 
 " Strip Whitespace on Save
 autocmd BufWritePre * :%s/\s\+$//e

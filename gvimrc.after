@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Author:   Erik Sundahl
-" Appnet:  @esundahl
+" Twitter:  @esundahl
 " Website:  http://eriksundahl.com
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -10,5 +10,5 @@
 
 "Set Color Scheme
 set background=dark
-colorscheme bubblegum
+colorscheme pastel
 set guifont=Monaco:h14
