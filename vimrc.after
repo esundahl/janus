@@ -11,7 +11,7 @@ AirlineTheme bubblegum
 " Fixes gitgutter color
 highlight SignColumn ctermbg=black
 
-"Saves time; maps the spacebar to colon
+"Saves time; maps the spacebar to coln
 nmap <space> :
 
 " Use the arrows to something usefull
