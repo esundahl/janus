@@ -58,6 +58,8 @@ if exists(":Tabularize")
   vmap <Leader>a: :Tabularize /:<CR>
 endif
 
+set listchars=tab:▸\ ,eol:¬
+
 " Copy default register to the system clipboard
 set clipboard=unnamed
 
