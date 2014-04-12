@@ -8,6 +8,8 @@ set background=dark
 colorscheme pastel
 AirlineTheme bubblegum
 
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
 " Fixes gitgutter color
 highlight SignColumn ctermbg=black
 
